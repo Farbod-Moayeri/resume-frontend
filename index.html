@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Farbod Moayeri" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/my-styles.css">
+        <script src="../js/index.js"></script>
+        <title>My Online Resume</title>
+    </head>
+
+    <body>
+        <header>
+            <img id="profile-image" src="/images/Farbod-Moayeri.jpg" alt="Farbod-Moayeri">
+
+            <h2>Farbod Moayeri</h2>
+            <p>Future Backend Developer</p>
+
+            <div id="main-buttons">
+                <a href="/documents/Farbod_Moayeri_-_Resume_Fall_2023.pdf" download="Farbod Moayeri Resume">
+                    <button id="resume-button">Resume</button>
+                </a>
+                <a href="./index.html#contact-form">
+                    <button id="contact-button">Contact Me</button>
+                </a>
+            </div>
+
+        </header>
+        <main>
+
+            <h1>Profile</h1>
+            <div class="summary-container">
+                <div class="summary">
+                    <h3>About Me and Academic Honesty</h3>
+                    <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                        No part of this assessment has been copied manually or electronically from any other source
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or
+                        made available in this assessment for my use. I also declare that no part of this assignment has
+                        been distributed to other students.
+                    </p>
+                </div>
+                <div class="characteristics">
+                    <h3>Basic Information</h3>
+                    <p>Name: Farbod Moayeri</p>
+                    <p>Date: 2023-08-18</p>
+                    <p>Course: Web222</p>
+                    <p>Section: NFF</p>
+                    <p>Prof Name: Mark Meritt</p>
+                </div>
+            </div>
+        
+            <div id="education-info">
+
+                <h1>Education</h1>
+                <div class="education-container">
+                    <div class="qualification">
+                        <h5>2022-2024(Expected)</h5>
+                        <p>Advanced Diploma</p>
+                    </div>
+                    <div class="info">
+                        <h3>Advanced Diploma</h3>
+                        <p>Seneca College</p>
+                        <h5>I went to Seneca College to get a CPA degree because my passion in coding was found by doing tts-lua code for Kingdom Death:Monster the board game.</h5>
+                    </div>
+                </div>
+
+                <div class="education-container">
+                    <div class="qualification">
+                        <h5>2019-2021</h5>
+                        <p>Ontario College Certificate</p>
+                    </div>
+                    <div class="info">
+                        <h3>Certificate for Electrical Techniques</h3>
+                        <p>Humber College</p>
+                        <h5>I went to Humber College to get a 309A electrician license while working under my Father.
+                        </h5>
+                    </div>
+                </div>
+
+                <h1>Experience</h1>
+                
+                <div class="education-container">
+                    <div class="qualification">
+                        <h5>2021</h5>
+                        <p>Board game mod</p>
+                    </div>
+                    <div class="info">
+                        <h3>Scripted Kingdom Death:Monster</h3>
+                        <p>Steam workshop</p>
+                        <h5>I created a script for my favorite board game on Tabletop Simulator which is a computer game on Steam.
+                            I decided to do it because I fell in love with the board game and I wanted to give other people a chance to know the game as well.
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="education-container">
+                    <div class="qualification">
+                        <h5>2021-2022</h5>
+                        <p>Hillview Electric</p>
+                    </div>
+                    <div class="info">
+                        <h3 style="margin-bottom: 5px;">Apprentice Electrician</h3>
+                        <h5>My father's work slowed down and I could no longer be fully employed working under him so I looked for another employer.
+                            My new boss taught me how to become efficient and quick with my work. And how to micro manage myself so I am as thorough as possible.
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="education-container">
+                    <div class="qualification">
+                        <h5>2018-2021</h5>
+                        <p>Vesta Electric</p>
+                    </div>
+                    <div class="info">
+                        <h3 style="margin-bottom: 5px;">Apprentice Electrician</h3>
+                        <h5>I worked with my father once I turned 18 and did electrician work for him.
+                            It was not easy work and If I hadn't gained some resilience working at All Stars, I would have quit.
+                            This work toughened me up.
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="education-container">
+                    <div class="qualification">
+                        <h5>2016-2017</h5>
+                        <p>All Stars</p>
+                    </div>
+                    <div class="info">
+                        <h3 style="margin-bottom: 5px;">Kitchen Assistant</h3>
+                        <h5>This was my first job and boy was it difficult for a first job.
+                            I learned the virtue of patience and hard work at that establishment.
+                            And those two virtues have served me ever since.
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+        <footer>
+            <h1>Contact Me</h1>
+            <form id="contact-form" name="contact" action="https://httpbin.org/post" method="post">
+                
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" size="25" maxlength="50" required autocomplete="cc-given-name">
+
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" size="25" maxlength="50" required autocomplete="email"> 
+
+                <label for="address">Address:</label>
+                <input id="address" type="text" name="address" size="25" maxlength="100" required autocomplete="address-line1">
+
+                <label for="city">City:</label>
+                <input id="city" type="text" name="city" size="25" list="cities" maxlength="50" required>
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Montreal">
+                    <option value="Calgary">
+                    <option value="Ottawa">
+                </datalist>
+
+                
+                <label for="postal">Postal Code:</label>
+                <input id="postal" type="text" name="postal" size="6" maxlength="7" style="text-transform: uppercase;" pattern="^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ ]?\d[ABCEGHJ-NPRSTV-Z]\d$"required autocomplete="postal-code">
+
+                <h2>Reason for Contact:</h2>
+                <label><input type="radio" name="contactReason" value="question" required onclick="toggleField('hiring','hourlyField')">Question</label><br>
+                <label><input type="radio" name="contactReason" value="comment" required onclick="toggleField('hiring','hourlyField')">Comment</label><br>
+                <label><input type="radio" name="contactReason" value="hiring" id="hiring" required onclick="toggleField('hiring','hourlyField')">Hiring</label>
+                <div id="hourlyField" style="display: none;">
+                    <label for="hourlyRate" id="hourly-rate">Hourly Rate:</label>
+                    <input type="number" name="hourly" id="hourly" step="any" min="0" required>
+                </div>
+
+                <label id="message-label" for="message" style="margin-top: 20px;">Message:</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </footer>
+    </body>
+
+</html>
