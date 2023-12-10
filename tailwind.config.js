@@ -1,16 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-import flowbitePlugin from 'flowbite/plugin';
 
 export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    'node_modules/flowbite-react/lib/esm/**/*.js',
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    flowbitePlugin,
-  ]
+  plugins: [require('@tailwindcss/typography'), require('daisyui'),],
+  daisyui: {
+    themes: ["fantasy"],
+  }
 }
-
