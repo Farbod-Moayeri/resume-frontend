@@ -1,7 +1,7 @@
 export const NavigationBar = () => {
     return (
         <>
-            <div className="navbar justify-end  bg-mountain text-white p-1">
+            <div className="navbar justify-end  bg-mountain p-1">
                 
                 <div>
                     <ul className="menu menu-horizontal px-1">

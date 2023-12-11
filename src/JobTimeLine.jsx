@@ -1,7 +1,7 @@
 export const JobTimeLine = () => {
     return (
         <>
-            <div className="bg-sky min-h-fit">
+            <div className="bg-darkRock min-h-fit text-neutral-50">
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>
                         <div className="timeline-middle">
