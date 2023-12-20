@@ -1,5 +1,4 @@
 export const JobTimeLineElement = ({ index ,year, title, description, isOdd, isLast}) => {
-    console.log(year, title, description, isOdd);
     return (
         <li>
             { index !== 0 &&

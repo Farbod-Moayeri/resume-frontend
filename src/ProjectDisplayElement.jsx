@@ -1,5 +1,4 @@
 export const ProjectDisplayElement = ({index, image, title, description, year, link, skills}) => {
-    console.log(skills);
     return (
         <>
             <a className="w-2/5 m-4" target="_blank" rel="noreferrer" href={link}><div className="card card-side bg-base-100 shadow-xl ">

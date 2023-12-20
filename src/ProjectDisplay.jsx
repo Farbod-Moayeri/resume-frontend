@@ -1,32 +1,22 @@
 import { ProjectDisplayElement } from "./ProjectDisplayElement"
 
 export const ProjectDisplay = () => {
-    const array = [
-        {
-            image: "https://steamuserimages-a.akamaihd.net/ugc/1822265814192889849/8C2AA808C1607CFA78A5E60A6E0EEB79C0281925/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
-            title: "Kingdom Death: Monster 1.6 + CCG",
-            description: "A fork of a popular tabletop simulator game", 
-            year: 2020,
-            link: "https://steamcommunity.com/sharedfiles/filedetails/?id=2672585904",
-            skills: ["C++", "Java", "NoSQL", "C#", "CSS", "Javascript", "Runescape"]
-        },
-        {
-            image: "https://steamuserimages-a.akamaihd.net/ugc/1822265814192889849/8C2AA808C1607CFA78A5E60A6E0EEB79C0281925/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
-            title: "Kingdom Death: Monster 1.6 + CCG",
-            description: "A fork of a popular tabletop simulator game", 
-            year: 2020,
-            link: "https://steamcommunity.com/sharedfiles/filedetails/?id=2672585904",
-            skills: ["C++", "Java", "NoSQL", "C#", "CSS", "Javascript", "Runescape"]
-        },
-        {
-            image: "https://steamuserimages-a.akamaihd.net/ugc/1822265814192889849/8C2AA808C1607CFA78A5E60A6E0EEB79C0281925/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
-            title: "Kingdom Death: Monster 1.6 + CCG",
-            description: "A fork of a popular tabletop simulator game", 
-            year: 2020,
-            link: "https://steamcommunity.com/sharedfiles/filedetails/?id=2672585904",
-            skills: ["C++", "Java", "NoSQL", "C#", "CSS", "Javascript", "Runescape"]
-        }
-    ]
+    const [projects, setProjects] = useState([])
+    const setProjects = (e) => {
+        
+    }
+    console.log(userName);
+    useEffect(() => {
+        fetch('localhost:4444/projects')
+        .then((data) => {
+            
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+        
+    }, []) // dependency array
+    
     return (
         <>
             <div className=" flex  bg-blueRock items-center flex-col">
