@@ -1,32 +1,33 @@
+import React, { useState, useEffect } from 'react';
 import { JobTimeLineElement } from "./JobTimeLineElement"
 
 export const JobTimeLine = () => {
-    const array = [
-        {
-            year: "2020",
-            title: "sparky",
-            description: "My first job", 
-        },
-        {
-            year: "2018",
-            title: "dishwash",
-            description: "My 0 job",
-        }
-    ]
+    const [jobs, setJobs] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:8888/jobs')
+        .then(response => response.json())
+        .then(data => {
+            setJobs(data);
+        })    
+        .catch((err) => {
+            console.log(err);
+        })
+        
+    }, []) // dependency array
     return (
         <>
             <div className="bg-darkRock min-h-fit text-neutral-50">
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     {
-                        array.map((element, index) => (
+                        jobs.map((element, index) => (
                             < JobTimeLineElement 
                                 key={index}
                                 index={index}
-                                year = {element.year}
+                                date = {element.date}
                                 title = {element.title}
                                 description={element.description}
                                 isOdd={(index % 2) !== 0}
-                                isLast={index + 1 === array.length}
+                                isLast={index + 1 === jobs.length}
                             />
                         )
                     )}

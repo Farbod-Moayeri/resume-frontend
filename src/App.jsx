@@ -4,7 +4,6 @@ import { ProfileHeader } from './ProfileHeader'
 import { JobTimeLine } from './JobTimeLine'
 import { ProjectDisplay } from './ProjectDisplay'
 import { SectorDivisor } from './SectorDivisor'
-import { ExampleComponent } from './exampleComponent'
 
 
 export const App = () => {
@@ -17,7 +16,6 @@ export const App = () => {
         <JobTimeLine />
         <SectorDivisor />
         <ProjectDisplay />
-        <ExampleComponent />
     </>
   )
 }
