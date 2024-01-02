@@ -1495,12 +1495,13 @@ html {
   border-end-end-radius: 0px;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .m-8 {
   margin: 2rem;
+}
+
+.mx-36 {
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
 
 .mb-10 {
@@ -1515,6 +1516,10 @@ html {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1527,6 +1532,10 @@ html {
   height: 20rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -1534,10 +1543,6 @@ html {
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-2\/5 {
-  width: 40%;
 }
 
 .w-36 {
@@ -1562,6 +1567,14 @@ html {
   border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
+.auto-rows-fr {
+  grid-auto-rows: minmax(0, 1fr);
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1578,16 +1591,12 @@ html {
   justify-content: flex-end;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
+.gap-36 {
+  gap: 9rem;
 }
 
 .rounded-xl {
@@ -1631,6 +1640,11 @@ html {
 .bg-sky {
   --tw-bg-opacity: 1;
   background-color: rgb(84 104 131 / var(--tw-bg-opacity));
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-1 {

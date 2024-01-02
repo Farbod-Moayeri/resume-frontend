@@ -5,7 +5,7 @@ export const NavigationBar = () => {
                 
                 <div>
                     <ul className="menu menu-horizontal px-1">
-                        <li><a href="/Resume">Download Resume</a></li>
+                        <li><a href="./public/Resume">Download Resume</a></li>
                         <li>
                             <details>
                                 <summary>

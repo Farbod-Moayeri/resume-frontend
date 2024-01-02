@@ -16,9 +16,9 @@ export const ProjectDisplay = () => {
     }, []) // dependency array
     return (
         <>
-            <div className=" flex  bg-blueRock items-center flex-col">
-                <div className="m-8">
-                    <h1 className=" border-l-darkRock text-7xl">Projects</h1>
+            <div className="flex bg-blueRock items-center flex-col">
+                <div className=" mt-8 mb-14">
+                    <h1 className=" text-neutral-50 text-7xl font-serif">Projects</h1>
                 </div>
 
                 <div id="projectList" className=" mx-36 gap-36 grid auto-rows-fr grid-cols-2">

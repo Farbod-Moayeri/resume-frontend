@@ -16,14 +16,18 @@ export const JobTimeLine = () => {
     }, []) // dependency array
     return (
         <>
-            <div className="bg-darkRock min-h-fit text-neutral-50">
+            <div className="bg-darkRock min-h-fit text-neutral-50 items-center flex flex-col p-12">
+                <div className=" mb-16">
+                    <h1 className=" border-l-darkRock text-7xl font-serif">Timeline</h1>
+                </div>
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     {
                         jobs.map((element, index) => (
                             < JobTimeLineElement 
                                 key={index}
                                 index={index}
-                                date = {element.date}
+                                startDate = {element.startDate}
+                                endDate = {element.endDate}
                                 title = {element.title}
                                 description={element.description}
                                 isOdd={(index % 2) !== 0}
