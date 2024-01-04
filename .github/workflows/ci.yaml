@@ -40,4 +40,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: farbodmoayeri/resume-frontend:latest
+          tags: farbodmoayeri/resume-frontend-docker:latest
