@@ -16,3 +16,6 @@ CMD ["nginx", "-g", "daemon off;"]
 # npm run build
 # docker build -t resume-frontend-docker .
 # docker run -p <PORT>:80 <IMAGE NAME>
+
+# docker tag react-resume-backend-projects farbodmoayeri/resume-backend
+# docker push farbodmoayeri/resume-backend
