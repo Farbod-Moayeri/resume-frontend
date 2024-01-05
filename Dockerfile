@@ -1,5 +1,5 @@
 # BUILD
-FROM node:20.2.0 AS build
+FROM node:21.2.0 AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install --silent
