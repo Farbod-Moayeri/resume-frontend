@@ -4,7 +4,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install --silent
 COPY . ./
-RUN ls -la src
 RUN npm run build
 
 # RUNTIME (NGINX)
