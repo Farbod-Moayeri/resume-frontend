@@ -4,7 +4,7 @@ import { ProjectDisplayElement } from "./ProjectDisplayElement"
 export const ProjectDisplay = () => {
     const [projects, setProjects] = useState([])
     useEffect(() => {
-        fetch('http://localhost:8888/projects')
+        fetch(`${import.meta.env.VITE_FETCH_API}/projects`)
         .then(response => response.json())
         .then(data => {
             setProjects(data);

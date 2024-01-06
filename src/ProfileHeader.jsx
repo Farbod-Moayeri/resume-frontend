@@ -18,7 +18,7 @@ export const ProfileHeader = () => {
                     <div className="max-w-md text-left">
                         <h1 className="mb-5 text-5xl">Farbod Moayeri</h1>
                         <p className="font-bold">Software Developer</p>
-                        <button class=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-mountain rounded">
+                        <button className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-mountain rounded">
                             <a href={resume} target='blank'>Resume</a>
                         </button>
                         
