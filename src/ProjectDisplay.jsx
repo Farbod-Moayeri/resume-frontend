@@ -3,8 +3,11 @@ import { ProjectDisplayElement } from "./ProjectDisplayElement"
 
 export const ProjectDisplay = () => {
     const [projects, setProjects] = useState([])
+    const vite_fetch = import.meta.env.VITE_FETCH_API ?? `/api`;
+    
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_FETCH_API}/projects`)
+        //fetch(`${import.meta.env.VITE_FETCH_API}/projects`)
+        fetch(`${vite_fetch}/projects`)
         .then(response => response.json())
         .then(data => {
             setProjects(data);

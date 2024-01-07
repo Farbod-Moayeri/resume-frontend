@@ -3,8 +3,9 @@ import { JobTimeLineElement } from "./JobTimeLineElement"
 
 export const JobTimeLine = () => {
     const [jobs, setJobs] = useState([])
+    const vite_fetch = import.meta.env.VITE_FETCH_API ?? `/api`;
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_FETCH_API}/jobs`)
+        fetch(`${vite_fetch}/jobs`)
         .then(response => response.json())
         .then(data => {
             setJobs(data);
