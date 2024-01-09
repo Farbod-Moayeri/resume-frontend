@@ -9,7 +9,7 @@ export const ProfileHeader = () => {
                 <div className="hero-content text-center text-neutral-content h-80">
                     <a href="https://www.linkedin.com/in/farbod-m-a33b64128/" target='blank'>
                         <div className="avatar">
-                            <div className="w-36 rounded-none ">
+                            <div className="w-36 rounded-xl ">
                                 <img className="image-full border-spacing-48 " src="./farbodMoayeri.jpg" />
                                 
                             </div>

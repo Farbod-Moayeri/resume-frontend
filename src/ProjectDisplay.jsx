@@ -19,12 +19,10 @@ export const ProjectDisplay = () => {
     }, []) // dependency array
     return (
         <>
-            <div className="flex bg-blueRock items-center flex-col">
-                <div className=" mt-8 mb-14">
-                    <h1 className=" text-neutral-50 text-7xl font-serif">Projects</h1>
-                </div>
+            <div className="flex bg-blueRock items-center flex-col py-[5%]">
+                
 
-                <div id="projectList" className=" mx-36 gap-36 grid auto-rows-fr grid-cols-2">
+                <div id="projectList" className="mx-[5%] gap-[7%] grid auto-rows-fr grid-cols-1 md:grid-cols-2">
                 {
                     projects.map((element, index) => (
                         < ProjectDisplayElement

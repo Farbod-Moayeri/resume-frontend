@@ -17,10 +17,7 @@ export const JobTimeLine = () => {
     }, []) // dependency array
     return (
         <>
-            <div className="bg-darkRock min-h-fit text-neutral-50 items-center flex flex-col p-12">
-                <div className=" mb-16">
-                    <h1 className=" border-l-darkRock text-7xl font-serif">Timeline</h1>
-                </div>
+            <div className=" bg-mountain min-h-fit text-neutral-50 items-center flex flex-col pt-[4%] pb-[3%] px-[4%]">
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     {
                         jobs.map((element, index) => (

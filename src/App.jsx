@@ -10,9 +10,9 @@ export const App = () => {
     
     <>
         <ProfileHeader />
-        <SectorDivisor />
+        
         <JobTimeLine />
-        <SectorDivisor />
+        
         <ProjectDisplay />
     </>
   )
