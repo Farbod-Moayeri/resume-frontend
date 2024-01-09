@@ -4,28 +4,28 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
     return (
         <>
 
-            <div className="md:hidden block">
-                <div className="relative block">
+            <div className="2xl:hidden">
+                <div className="block">
 
                     <a className="" target="_blank" rel="noreferrer" href={link}>
-                        <div className="w-full relative">
-                            <img className="object-fill w-full h-40 md:h-5/6 rounded-3xl transition-opacity duration-300 md:hover:opacity-20" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
+                        <div className="w-full mb-2">
+                            <img className="object-fill w-full h-48 rounded-3xl transition-opacity duration-300 md:hover:opacity-20" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
                         </div>
                     </a>
                     
                     <a className="" target="_blank" rel="noreferrer" href={link}>
-                        <div className="bg-slate-200 mt-2 md:absolute md:bottom-[4%] md:left-[4%] md:right-auto w-full md:w-auto md:h-5/6 p-4 rounded-3xl flex flex-col justify-between">
+                        <div className="bg-slate-200 w-full p-4 rounded-3xl flex flex-col justify-between">
                             <div>
-                                <h2 className="font-Source font-bold text-xl md:text-3xl">{title}</h2>
+                                <h2 className="font-Source font-bold text-xl">{title}</h2>
                                 <p className="font-Playfair text-sm md:text-base">{description}</p>
                             </div>
                             
-                            <div id="technologies" className="flex flex-wrap gap-1 md:gap-2 mt-4">
+                            <div id="technologies" className="flex flex-wrap gap-1 mt-4">
                                 {skills.map((element, index) => (
-                                    <div key={index} className="badge badge-neutral text-xs md:text-sm">{element.skill}</div>
+                                    <div key={index} className="badge badge-neutral text-xs">{element.skill}</div>
                                 ))}
                             </div>
-                            <p className="hidden md:block p-4">{formattedDate}</p>
+                            <p className="hidden p-4">{formattedDate}</p>
                         </div>
                     </a>
                     
@@ -34,7 +34,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
 
             
             
-            <div className="relative hidden md:block">
+            <div className="relative hidden 2xl:block">
                 
                 <a className="" target="_blank" rel="noreferrer" href={link}>
                     <div className="w-full h-5/6 relative z-10">
