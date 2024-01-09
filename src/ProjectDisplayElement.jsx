@@ -44,7 +44,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                 
                 
                 <a className="" target="_blank" rel="noreferrer" href={link}>
-                    <div className=" bg-slate-200 absolute bottom-[4%] left-[4%]  w-full h-5/6 p-[2%] z-0 rounded-3xl flex flex-col justify-between">
+                    <div className=" bg-slate-200 absolute bottom-[4%] left-[4%]  w-full h-5/6 px-[3.2%] py-[2%] z-0 rounded-3xl flex flex-col justify-between">
                         <div>
                             <h2 className="font-Source font-bold text-3xl">{title}</h2>
                             <p className=" font-Playfair">{description}</p>
