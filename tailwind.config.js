@@ -19,8 +19,14 @@ export default {
         Montserrat: ['Montserrat', 'sans-serif'],
         Source: ['Source Sans Pro', 'sans-serif'],
         Playfair: ['Playfair Display', 'serif'],
-      }
+      },
+      fontSize: {
+        'xxs': ['0.6rem', {
+          lineHeight: '0.9rem'
+        } ],
+      },
     },
+    
     safelist: ['animate-[fade-out-up_1s_ease-in-out]', 'animate-[fade-out_1s_ease-in-out]'],
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui'),],

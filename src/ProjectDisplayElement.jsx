@@ -4,25 +4,25 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
     return (
         <>
 
-            <div className="2xl:hidden">
+            <div className="lg:hidden">
                 <div className="block">
 
-                    <a className="" target="_blank" rel="noreferrer" href={link}>
+                    <a className="" target="_self" rel="noreferrer" href={link}>
                         <div className="w-full mb-2">
                             <img className="object-fill w-full h-48 rounded-3xl transition-opacity duration-300 md:hover:opacity-20" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
                         </div>
                     </a>
                     
-                    <a className="" target="_blank" rel="noreferrer" href={link}>
+                    <a className="" target="_self" rel="noreferrer" href={link}>
                         <div className="bg-slate-200 w-full p-4 rounded-3xl flex flex-col justify-between">
                             <div>
                                 <h2 className="font-Source font-bold text-xl">{title}</h2>
                                 <p className="font-Playfair text-sm md:text-base">{description}</p>
                             </div>
                             
-                            <div id="technologies" className="flex flex-wrap gap-1 mt-4">
+                            <div id="technologies" className="flex flex-wrap gap-1 mt-1">
                                 {skills.map((element, index) => (
-                                    <div key={index} className="badge badge-neutral text-xs">{element.skill}</div>
+                                    <div key={index} className="badge badge-neutral text-sm">{element.skill}</div>
                                 ))}
                             </div>
                             <p className="hidden p-4">{formattedDate}</p>
@@ -34,7 +34,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
 
             
             
-            <div className="relative hidden 2xl:block">
+            <div className="relative hidden lg:block">
                 
                 <a className="" target="_blank" rel="noreferrer" href={link}>
                     <div className="w-full h-5/6 relative z-10">
@@ -44,15 +44,15 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                 
                 
                 <a className="" target="_blank" rel="noreferrer" href={link}>
-                    <div className=" bg-slate-200 absolute bottom-[4%] left-[4%]  w-full h-5/6 px-[3.2%] py-[2%] z-0 rounded-3xl flex flex-col justify-between">
+                    <div className=" bg-slate-200 absolute bottom-[4%] left-[4%]  w-full h-5/6 px-[3.2%] py-[1.3%] z-0 rounded-3xl flex flex-col justify-between">
                         <div>
                             <h2 className="font-Source font-bold text-3xl">{title}</h2>
                             <p className=" font-Playfair">{description}</p>
                         </div>
                         
-                        <div id="technologies" className="flex flex-wrap gap-2">
+                        <div id="technologies" className="flex flex-wrap gap-2 lg:gap-[0.2rem] xl:gap-[0.5rem]">
                             {skills.map((element, index) => (
-                                <div key={index} className="badge badge-neutral">{element.skill}</div>
+                                <div key={index} className=" badge badge-neutral  lg:text-xs xl:text-sm">{element.skill}</div>
                             ))}
                         </div>
                         <p className="p-4 hidden">{formattedDate}</p>
