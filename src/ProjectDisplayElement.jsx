@@ -9,7 +9,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
 
                     <a className="" target="_self" rel="noreferrer" href={link}>
                         <div className="w-full mb-2">
-                            <img className="object-fill w-full h-48 rounded-3xl transition-opacity duration-300 md:hover:opacity-20" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
+                            <img className="object-fill w-full h-48 rounded-3xl transition-opacity duration-300 md:hover:opacity-0" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
                         </div>
                     </a>
                     
@@ -38,7 +38,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                 
                 <a className="" target="_blank" rel="noreferrer" href={link}>
                     <div className="w-full h-5/6 relative z-10">
-                        <img className="object-fill h-full w-full rounded-3xl transition-opacity duration-300 hover:opacity-5 " src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
+                        <img className="object-fill h-full w-full rounded-3xl transition-opacity duration-300 hover:opacity-0 " src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
                     </div>
                 </a>
                 
