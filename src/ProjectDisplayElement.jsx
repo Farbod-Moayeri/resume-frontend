@@ -44,7 +44,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                 
                 
                 <a className="" target="_blank" rel="noreferrer" href={link}>
-                    <div className=" bg-slate-200 absolute bottom-[4%] left-[4%]  w-full h-5/6 px-[3.2%] py-[1.3%] z-0 rounded-3xl flex flex-col justify-between">
+                    <div className=" bg-slate-200 absolute bottom-[1%] left-[4%] xl:bottom-[3.5%]  w-full h-5/6 px-[3.2%] py-[1.3%] z-0 rounded-3xl flex flex-col justify-between">
                         <div>
                             <h2 className="font-Source font-bold text-3xl">{title}</h2>
                             <p className=" font-Playfair">{description}</p>
@@ -52,7 +52,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                         
                         <div id="technologies" className="flex flex-wrap gap-2 lg:gap-[0.2rem] xl:gap-[0.5rem]">
                             {skills.map((element, index) => (
-                                <div key={index} className=" badge badge-neutral  lg:text-xs xl:text-sm">{element.skill}</div>
+                                <div key={index} className=" badge badge-neutral   text-sm">{element.skill}</div>
                             ))}
                         </div>
                         <p className="p-4 hidden">{formattedDate}</p>
