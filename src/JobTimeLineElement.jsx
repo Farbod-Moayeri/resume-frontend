@@ -14,7 +14,7 @@ export const JobTimeLineElement = ({ index , startDate, endDate, title, descript
             <div className={isOdd ? "timeline-start md:text-end mb-10" : "timeline-end mb-10"}>
                 <time className="font-mono italic">{formattedStartDate} - {formattedEndDate}</time>
                 <div className="md:text-2xl font-black text-lg font-Source">{title}</div>
-                <div className="font-Playfair md:text-lg text-sm">{description}</div>
+                <div className="font-Playfair text-lg">{description}</div>
             </div>
             { !isLast &&
                 <hr/>

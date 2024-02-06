@@ -18,6 +18,8 @@ export const JobTimeLine = () => {
     return (
         <>
             <div className=" bg-mountain min-h-fit text-neutral-50 items-center flex flex-col pt-[4%] pb-[3%] px-[4%]">
+
+                
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     {
                         jobs.map((element, index) => (
