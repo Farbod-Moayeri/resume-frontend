@@ -19,6 +19,12 @@ export const NavigationBar = () => {
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <a href=""></a>
+                </div>
+                <div>
+
+                </div>
             </div>
 
         </>

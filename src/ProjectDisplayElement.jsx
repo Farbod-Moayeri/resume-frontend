@@ -5,14 +5,14 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
 
         <>
 
-            <div className="flex flex-col mb-[6%]">
+            <div className="flex flex-col mb-[6%]  border-black border-2 rounded-3xl">
                 
                 <div className="w-full">
                     <img className="object-fill w-auto h-72 rounded-t-3xl" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
                 </div>
                 
-                
-                <div className="bg-slate-200 w-auto h-80 p-4 rounded-b-3xl flex flex-col justify-between">
+                {/* rounded-t-3xl */}
+                <div className="bg-slate-200 w-auto h-80 p-4 flex flex-col justify-between rounded-b-3xl">
                     
                     {/* <div id="technologies" className="flex flex-wrap gap-2">
                         {skills.map((element, index) => (
@@ -21,7 +21,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                     </div> */}
                     
                     <div>
-                        <div className="flex">
+                        <div className="flex justify-between">
                             <h2 className="font-Source font-bold text-xl">{title}</h2>
                             <div id="technologies" className="flex flex-wrap gap-2">
                                 

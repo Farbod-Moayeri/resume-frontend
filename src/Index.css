@@ -48,4 +48,10 @@
         background-color: aquamarine;
         border-radius: 0.75rem;
     }
+
+    html {
+        scroll-snap-type: y mandatory;
+    }
+
+
 }

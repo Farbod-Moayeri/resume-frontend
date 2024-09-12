@@ -3,6 +3,7 @@ import { ProfileHeader } from './ProfileHeader'
 import { JobTimeLine } from './JobTimeLine'
 import { ProjectDisplay } from './ProjectDisplay'
 import { SectorDivisor } from './SectorDivisor'
+import { Summary } from './Summary'
 
 
 export const App = () => {
@@ -11,6 +12,8 @@ export const App = () => {
     <>
         <ProfileHeader />
         
+        <Summary />
+
         <JobTimeLine />
         
         <ProjectDisplay />
