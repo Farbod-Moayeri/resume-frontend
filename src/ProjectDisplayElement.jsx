@@ -5,7 +5,7 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
 
         <>
 
-            <div className="flex flex-col mb-[6%]  border-black border-2 rounded-3xl">
+            <div className="flex flex-col mb-[6%]   rounded-3xl">
                 
                 <div className="w-full">
                     <img className="object-fill w-auto h-72 rounded-t-3xl" src={`${vite_fetch}/images/` + image} alt="ProjectImage"/> 
@@ -26,21 +26,21 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                             <div id="technologies" className="flex flex-wrap gap-2">
                                 
                                 {skills.slice(0,3).map((element, index) => (
-                                    <div key={index} className="badge badge-neutral text-sm">{element.skill}</div>
+                                    <div key={index} className="badge text-sm bg-blue-400 text-black">{element.skill}</div>
                                 ))} 
 
                             </div>
                         </div>
                         
-                        <p className="font-Playfair text-base">{description}</p>
+                        <p className="font-sans text-base text-black">{description}</p>
                     </div>
 
                     <div className="flex justify-evenly flex-row">
                         { site != '' &&
-                            <a href={site}><button className="btn bg-neutral-500">Site</button></a>
+                            <a href={site}><button className="btn bg-black text-white">Site</button></a>
                         }
                         { repo != '' &&
-                            <a href={repo}><button className="btn btn-success">Repository</button></a>
+                            <a href={repo}><button className="btn bg-black text-white">Repository</button></a>
                         }
 
                     </div>

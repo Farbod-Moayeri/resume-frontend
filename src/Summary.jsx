@@ -9,7 +9,7 @@ export const Summary = () => {
                     <div className="flex flex-col justify-start items-start">
                         <div className="flex justify-center items-center md:max-w-6xl">
                             <div className="md:mr-4 mr-2">
-                                <img className="md:w-24 w-12 md:h-24 h-12 object-cover rounded-full" src="../public/redMountains.jpg" alt="Seneca Polytechnic Logo" />
+                                <img className="md:w-24 w-12 md:h-24 h-12 object-cover rounded-full outline" src="../public/senecaPolytechnic.png" alt="Seneca Polytechnic Logo" />
                             </div>
                             <div>
                                 <p className="md:text-6xl text-xl md:mb-2 mb-1">Computer Programming and Analysis</p>

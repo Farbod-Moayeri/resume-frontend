@@ -15,12 +15,20 @@ export const JobTimeLine = () => {
         })
         
     }, []) // dependency array
+
+    // <div id='Experience' className=" bg-green-950 min-h-fit text-neutral-50 items-center flex flex-col pt-[4%] pb-[3%] px-[4%] snap-center">
+
+    //             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"></ul>
     return (
         <>
-            <div className=" bg-green-950 min-h-fit text-neutral-50 items-center flex flex-col pt-[4%] pb-[3%] px-[4%] snap-center">
+            
+            <div id='Experience' className='bg-black md:py-4 snap-center  text-neutral-50 md:pb-10'>
+                <div className="ml-[7%] md:mt-4 md:mb-20">
+                    <h1 className="md:text-9xl text-3xl font-Source font-black">Experience</h1>
+                </div>
+                <div className="carousel w-full">
 
-                
-                <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    
                     {
                         jobs.map((element, index) => (
                             < JobTimeLineElement 
@@ -29,13 +37,16 @@ export const JobTimeLine = () => {
                                 startDate = {element.startDate}
                                 endDate = {element.endDate}
                                 title = {element.title}
+                                details = {element.details}
+                                skills = {element.skills}
                                 description={element.description}
                                 isOdd={(index % 2) !== 0}
                                 isLast={index + 1 === jobs.length}
                             />
                         )
                     )}
-                </ul>
+                    
+                </div>
             </div>
         </>
     )
