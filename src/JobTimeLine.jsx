@@ -24,7 +24,7 @@ export const JobTimeLine = () => {
             
             <div id='Experience' className='bg-black md:py-4 snap-center  text-neutral-50 md:pb-10'>
                 <div className="ml-[7%] md:mt-4 md:mb-20">
-                    <h1 className="md:text-9xl text-3xl font-Source font-black">Experience</h1>
+                    <h1 className="md:text-9xl text-3xl font-sans font-black">Experience</h1>
                 </div>
                 <div className="carousel w-full">
 

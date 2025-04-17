@@ -22,11 +22,11 @@ export const ProjectDisplayElement = ({ index, image, title, description, date, 
                     
                     <div>
                         <div className="flex justify-between">
-                            <h2 className="font-Source font-bold text-xl">{title}</h2>
+                            <h2 className="font-sans font-bold text-xl">{title}</h2>
                             <div id="technologies" className="flex flex-wrap gap-2">
                                 
                                 {skills.slice(0,3).map((element, index) => (
-                                    <div key={index} className="badge text-sm bg-blue-400 text-black">{element.skill}</div>
+                                    <div key={index} className="font-sans badge text-sm bg-blue-400 text-black">{element.skill}</div>
                                 ))} 
 
                             </div>

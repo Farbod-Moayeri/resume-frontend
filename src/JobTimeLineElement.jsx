@@ -27,23 +27,23 @@ export const JobTimeLineElement = ({ index , startDate, endDate, title, details,
                 {/* Flex container to center the content vertically, and align it to the left */}
                 <div className="flex flex-col justify-center items-start md:ml-56 w-full">
                 
-                    <div title="Job Title" className="text-white text-sm md:text-8xl font-black font-Playfair md:mb-5">
+                    <div title="Job Title" className="font-sans text-white text-sm md:text-8xl font-black md:mb-5">
                         {title}
                     </div>
 
-                    <div title="Date" className="md:text-3xl text-white md:mb-7">
+                    <div title="Date" className="font-sans md:text-3xl text-white md:mb-7">
                         {startDateYear}/{startDateMonth}/{startDateDay} - {endDateYear}/{endDateMonth}/{endDateDay}
                     </div>
 
-                    <div title="Details" className="text-white text-sm md:text-5xl md:mb-4 font-Playfair md:max-w-7xl">
+                    <div title="Details" className="text-white text-sm md:text-5xl md:mb-4 font-sans md:max-w-7xl">
                         {details}
                     </div>
 
-                    <div title="Skills" className="text-white text-sm md:text-5xl md:mb-10 font-Playfair">
+                    <div title="Skills" className="text-white text-sm md:text-5xl md:mb-10 font-sans">
                         {skills}
                     </div>
 
-                    <div title="Description" className="text-white text-sm md:text-5xl font-Playfair md:max-w-7xl md:pb-2">
+                    <div title="Description" className="text-white text-sm md:text-5xl font-sans md:max-w-7xl md:pb-2">
                         {description}
                     </div>
 
