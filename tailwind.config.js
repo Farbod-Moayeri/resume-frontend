@@ -8,11 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "mountain" : "#1B2036", 
-        "sky" : "#546883", 
-        "redRock" : "#6A1C29", 
-        "darkRock" : "#30142A" ,
-        "blueRock": "#18273E"
+        electric: '#00FFFF',
+        viborange: '#FF8800',
+        limegreen: '#32CD32',
+        royalpurple: '#9B59B6',
       },
       fontFamily: {
         Lato: ['Lato', 'sans-serif'],

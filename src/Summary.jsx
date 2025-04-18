@@ -5,7 +5,7 @@ export const Summary = () => {
                 <div className="ml-[7%] md:mt-4 md:mb-20">
                     <h1 className="font-sans md:text-9xl text-3xl font-black">Summary</h1>
                 </div>
-                <div className="flex flex-col justify-center items-center">
+                <div className="md:mb-20 flex flex-col justify-center items-center">
                     <div className="flex flex-col justify-start items-start">
                         <div className="flex justify-center items-center md:max-w-6xl">
                             <div className="md:mr-4 mr-2">
@@ -18,8 +18,9 @@ export const Summary = () => {
                         </div>
                         <div className="md:mt-10 mt-3 md:max-w-7xl md:text-5xl">
                             <p className="font-sans">
-                            Throughout my education at Seneca Polytechnic I gained programming knowledge in React, Node.Js, C, and C++ as well as Javascript.
-                            On my own time I gained programming knowledge in Java and Selenium as well as Docker.
+                            Throughout my education at Seneca Polytechnic I gained programming knowledge in React, Node.Js, C, C++, and python as well as Javascript.
+                            On my own time I gained programming knowledge in Java and Selenium. During my first co-op I gained experience in regression testing as well
+                            as sanity testing after bug fixes. I also got to use my programming knowledge of Selenium and Java.
                             </p>
                         </div>
                     </div>
