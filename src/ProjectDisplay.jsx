@@ -21,7 +21,7 @@ export const ProjectDisplay = () => {
         <>
             <div id='Projects' className="flex bg-slate-50 items-center flex-col justify-center snap-center">
                 
-                <div id="projectList" className="mx-[5%]  md:gap-[7%] grid auto-rows-fr grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-[6%]">
+                <div id="projectList" className=" mx-[5%]  md:gap-[7%] grid auto-rows-fr grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-[6%]">
                 {
                     projects.map((element, index) => (
                         < ProjectDisplayElement

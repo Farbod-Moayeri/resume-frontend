@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { JobTimeLineElement } from "./JobTimeLineElement"
 
+
+
 export const JobTimeLine = () => {
+
     const [jobs, setJobs] = useState([])
     const vite_fetch = import.meta.env.VITE_FETCH_API ?? `/api`;
     useEffect(() => {
@@ -26,7 +29,7 @@ export const JobTimeLine = () => {
                 <div className="ml-[7%] md:mt-4 md:mb-20 mb-5">
                     <h1 className="md:text-9xl text-3xl font-sans font-black">Experience</h1>
                 </div>
-                <div className="carousel w-full">
+                <div transition={{ duration: 2 }} className="carousel w-full">
 
                     {
                         jobs.map((element, index) => (

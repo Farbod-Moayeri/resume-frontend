@@ -1,0 +1,36 @@
+.carousel-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  cursor: grab;
+  padding-bottom: 2rem;
+}
+
+.carousel-container:active {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+}
+
+.carousel-item {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel-item {
+    width: 30%;
+  }
+}
