@@ -25,13 +25,13 @@ export const JobTimeLineElement = ({ index , startDate, endDate, title, details,
             <div id={`slide${currentIndex}`} className="carousel-item relative w-full flex flex-col justify-center">
 
                 {/* Flex container to center the content vertically, and align it to the left */}
-                <div className="flex flex-col justify-center items-start md:ml-56 w-full">
+                <div className="flex flex-col justify-center items-start md:ml-56 ml-5 w-full">
                 
-                    <div title="Job Title" className="font-sans text-blue-400 text-sm md:text-8xl font-black md:mb-5">
+                    <div title="Job Title" className="font-sans text-blue-300 text-sm md:text-8xl font-black md:mb-5">
                         {title}
                     </div>
 
-                    <div title="Date" className="font-sans text-viborange md:text-3xl text-white md:mb-7">
+                    <div title="Date" className="font-sans md:text-3xl  md:mb-7">
                         {startDateYear}/{startDateMonth}/{startDateDay} - {endDateYear}/{endDateMonth}/{endDateDay}
                     </div>
 
@@ -43,7 +43,7 @@ export const JobTimeLineElement = ({ index , startDate, endDate, title, details,
                         {skills}
                     </div>
 
-                    <div title="Description" className="text-white text-sm md:text-5xl font-sans md:max-w-7xl md:pb-2">
+                    <div title="Description" className="text-white text-sm md:text-5xl font-sans md:max-w-7xl md:pb-2 text-justify">
                         {description}
                     </div>
 

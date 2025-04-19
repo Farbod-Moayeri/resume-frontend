@@ -31,11 +31,11 @@ export const Navbar = () => {
         <>
         
             <div className="md:pt-4 md:pb-4 flex flex-row justify-start bg-black">
-                <div className="md:mx-5"><a className="font-sans text-white md:text-4xl">Home</a></div>
-                <div className="md:mx-5"><a href="#Projects" className="font-sans text-white md:text-4xl">Projects</a></div>
-                <div className="md:mx-5"><a href="#Experience" className="font-sans text-white md:text-4xl">Experience</a></div>
-                <div className="md:mx-5"><a href={resume} className="font-sans text-white md:text-4xl" target='blank'>Resume</a></div>
-                <div className="md:mx-5"><a href={"https://www.linkedin.com/in/farbod-m-a33b64128/"} className="font-sans text-white md:text-4xl">LinkedIn</a></div>
+                <div className="md:mx-5 mx-1"><a className="font-sans text-white md:text-4xl">Home</a></div>
+                <div className="md:mx-5 mx-1"><a href="#Projects" className="font-sans text-white md:text-4xl">Projects</a></div>
+                <div className="md:mx-5 mx-1"><a href="#Experience" className="font-sans text-white md:text-4xl">Experience</a></div>
+                <div className="md:mx-5 mx-1"><a href={resume} className="font-sans text-white md:text-4xl" target='blank'>Resume</a></div>
+                <div className="md:mx-5 mx-1"><a href={"https://www.linkedin.com/in/farbod-m-a33b64128/"} className="font-sans text-white md:text-4xl">LinkedIn</a></div>
             </div>
 
         </>
