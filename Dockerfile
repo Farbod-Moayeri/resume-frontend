@@ -20,3 +20,6 @@ CMD ["nginx", "-g", "daemon off;"]
 
 # docker tag react-resume-backend-projects farbodmoayeri/resume-backend
 # docker push farbodmoayeri/resume-backend
+
+# docker tag resume-frontend-docker farbodmoayeri/resume-frontend
+# docker push farbodmoayeri/resume-frontend

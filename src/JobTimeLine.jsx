@@ -31,7 +31,7 @@ export const JobTimeLine = () => {
                 </div>
                 <div transition={{ duration: 2 }} className="carousel w-full">
 
-                    {
+                    {/* {
                         jobs.map((element, index) => (
                             < JobTimeLineElement 
                                 key={index}
@@ -46,7 +46,9 @@ export const JobTimeLine = () => {
                                 isLast={index + 1 === jobs.length}
                             />
                         )
-                    )}
+                    )} */}
+
+                    <JobTimeLineElement/>
                     
                 </div>
             </div>
